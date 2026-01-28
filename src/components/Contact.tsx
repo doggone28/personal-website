@@ -7,9 +7,9 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const socials = [
-    { name: "Instagram", href: "#" },
-    { name: "LinkedIn", href: "#" },
-    { name: "GitHub", href: "#" },
+    { name: "Instagram", href: "https://www.instagram.com/jinu.28" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/brandonjinuson/" },
+    { name: "GitHub", href: "https://github.com/doggone28" },
 
   ];
 
