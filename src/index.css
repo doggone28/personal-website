@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 10% 5%;
+    --foreground: 40 20% 92%;
+
+    --card: 20 8% 8%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 20 8% 8%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 20 10% 5%;
+
+    --secondary: 20 6% 15%;
+    --secondary-foreground: 40 20% 92%;
+
+    --muted: 20 6% 12%;
+    --muted-foreground: 30 10% 55%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 20 10% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 20% 92%;
+
+    --border: 20 6% 18%;
+    --input: 20 6% 18%;
+    --ring: 38 92% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(20 10% 5%) 0%, hsl(25 12% 10%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(28 90% 55%) 100%);
+    --shadow-glow: 0 0 60px hsl(38 92% 50% / 0.15);
+    --shadow-card: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
+    
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  .dark {
+    --background: 20 10% 5%;
+    --foreground: 40 20% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background: hsl(38 92% 50% / 0.3);
+    color: hsl(40 20% 92%);
+  }
+}
+
+@layer components {
+  .text-display {
+    font-family: var(--font-display);
+  }
+
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hover-line {
+    position: relative;
+  }
+
+  .hover-line::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: hsl(var(--primary));
+    transition: width 0.3s ease;
+  }
+
+  .hover-line:hover::after {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
