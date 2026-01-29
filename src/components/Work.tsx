@@ -31,7 +31,7 @@ const workExperiences = [
     title: "VR/AR Cybersecurity & Data Protection Intern",
     company: "Wireless Network Laboratory",
     period: "Jun. 2024 - Jun. 2025",
-    description: "Presented Cancer Incidence and Mortality in a Cohort of Opioid Use Disorder Subjects at the Aresty Research Symposium, presenting to around 400 people",
+    description: "Investigated biometric privacy risks in VR devices by analyzing gyroscope and accelerometer data through Android Studio & C, contributing to privacy-preserving interaction methods",
   }
 ];
 
