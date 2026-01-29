@@ -54,8 +54,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-muted-foreground text-lg max-w-md leading-relaxed"
           >
-            Early career software engineer eager to make a difference in the world through tech. 
-            Loves fast-moving, dynamic, problem-solving oriented teamwork.
+            Early career software engineer aspiring to make a difference through tech. 
+            Increase your sacrifice or lower your desire.
             
           </motion.p>
 

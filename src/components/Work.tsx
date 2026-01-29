@@ -7,52 +7,68 @@ import { Github } from "lucide-react";
 const workExperiences = [
   {
     id: 1,
-    title: "Senior Software Engineer",
-    company: "Tech Innovations Inc.",
-    period: "2023 - Present",
-    description: "Leading development of scalable web applications and mentoring junior developers.",
+    title: "Web Designer",
+    company: "Cabaret Theatre",
+    period: "Jun. 2025 - Present",
+    description: "Developed and updated promotional content in collaboration with board members",
   },
   {
     id: 2,
-    title: "Full Stack Developer",
-    company: "Digital Solutions Co.",
-    period: "2021 - 2023",
-    description: "Built and maintained multiple client-facing applications using React and Node.js.",
+    title: "Computer Science & Mathematics Lead Mentor Learning Assistant",
+    company: "Rutgers Learning Centres",
+    period: "Dec. 2023 - Present",
+    description: "Leads 3 sections of Probability, Calculus, and Intro to CS courses to instruct 60+ students per semester",
   },
   {
     id: 3,
-    title: "Frontend Developer",
-    company: "Creative Agency",
-    period: "2019 - 2021",
-    description: "Developed responsive web interfaces and collaborated with design teams.",
+    title: "Research Assistant",
+    company: "Rutgers Biomedical & Health Sciences / New Jersey Medical School",
+    period: "Jun. 2024 - Jun. 2025",
+    description: "Presented Cancer Incidence and Mortality in a Cohort of Opioid Use Disorder Subjects at the Aresty Research Symposium, presenting to around 400 people",
   },
+  {
+    id: 4,
+    title: "VR/AR Cybersecurity & Data Protection Intern",
+    company: "Creative Agency",
+    period: "Jun. 2024 - Jun. 2025",
+    description: "Presented Cancer Incidence and Mortality in a Cohort of Opioid Use Disorder Subjects at the Aresty Research Symposium, presenting to around 400 people",
+  }
 ];
 
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    category: "Full Stack",
+    title: "Multiplayer Rock Paper Scissors Server",
+    category: "C, POSIX Sockets, Threads, Polling",
     year: "2024",
-    description: "A modern shopping experience with real-time inventory management.",
-    github: "https://github.com/yourname/ecommerce",
+    description: "Designed a client-server architecture using pthread and poll for match handshake logic, player validation, and rematches",
+    github: "https://github.com/doggone28/rockpaperscissors",
   },
   {
     id: 2,
-    title: "Task Management App",
-    category: "Web Application",
+    title: "Custom Unix-Like Shell",
+    category: "C, Unix Systems Programming, Process Management",
     year: "2024",
-    description: "Collaborative project management tool with team features.",
-    github: "https://github.com/yourname/task-manager",
+    description: "Built a C-based shell supporting interactive and batch modes with pipelines, redirection, and built-in commands",
+    github: "https://github.com/doggone28/Custom-Shell-Implementation---CS214",
   },
   {
     id: 3,
-    title: "Portfolio CMS",
-    category: "Content Management",
-    year: "2023",
-    description: "Custom CMS for creative professionals to showcase their work.",
-    github: "https://github.com/yourname/portfolio-cms",
+    title: "Reliable Data Transfer over UDP",
+    category: "Python, UDP/TCP, Sockets, Cumulative ACKs",
+    year: "2025",
+    description: "Built a UDP-style reliable transport protocol implementing pipelined sliding windows, loss recovery via timeouts and duplicate ACKs, and configurable networking loss models to study throughput and correctness under unreliable conditions",
+    github: "https://github.com/doggone28/Reliable-UDP-Data-Transfer",
   },
+
+   {
+    id: 4,
+    title: "Personal Website",
+    category: "TypeScript, CSS, HTML5, JavaScript",
+    year: "2025",
+    description: "You're looking at it!",
+    github: "https://github.com/doggone28/personal-website",
+  }
 ];
 
 
