@@ -33,7 +33,7 @@ const Hero = () => {
             className="space-y-4"
           >
             <span className="text-muted-foreground text-sm tracking-[0.3em] uppercase">
-              Fullstack Software Engineer
+              Creative & Fullstack Software Engineer
             </span>
           </motion.div>
 
